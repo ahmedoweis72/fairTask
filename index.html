@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Transactions</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+
+<body class="bg-dark">
+
+  <div class="loading ">
+    <span class="loader"></span>
+  </div>
+
+  <div id="hide" class="container border rounded py-5 my-5 bg-primary-subtle ">
+    <h1>Customer Transactions</h1>
+
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i
+          class="fa-solid fa-magnifying-glass"></i>Search</button>
+      <input id="input" type="search" class="form-control" placeholder="Search"
+        aria-label="Example text with button addon" aria-describedby="button-addon1">
+    </div>
+
+
+    <table id="tbody" class="table table-striped ">
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Date of Purchase</th>
+          <th>Amount Spent</th>
+        </tr>
+      </thead>
+
+    </table>
+  </div>
+
+  <div id="searched" class="container border rounded py-5 my-5 bg-dark-subtle  position-relative z-3 d-none ">
+
+    <div class="d-flex justify-content-between">
+
+      <h1>Customer Filter</h1>
+      <i id="exit" class="fa-regular fa-circle-xmark fs-5 text-black"></i>
+
+    </div>
+
+
+    <table id="tbodyone" class="table table-striped ">
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Date of Purchase</th>
+          <th>Amount Spent</th>
+        </tr>
+      </thead>
+
+    </table>
+
+  </div>
+
+
+
+  <script src="JS/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/mine.js"></script>
+</body>
+
+</html>
